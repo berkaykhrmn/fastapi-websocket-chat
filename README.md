@@ -38,9 +38,9 @@ A real-time chat application built with FastAPI, WebSockets, PostgreSQL, and mod
 ### Prerequisites
 
 - Python 3.12 or higher
-- PostgreSQL 16 (or use Docker)
+- PostgreSQL
 - pip package manager
-- Docker and Docker Compose (optional, for containerized deployment)
+- Docker and Docker Compose
 
 ### Docker Deployment
 
