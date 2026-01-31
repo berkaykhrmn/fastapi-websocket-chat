@@ -11,7 +11,7 @@ A real-time chat application built with FastAPI, WebSockets, PostgreSQL, and mod
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 > **Note:**
-> Note: The HTML–CSS–JS design of this project is based on a pre-made template. I integrated the FastAPI Websocket backend myself and customized the template to fit project structure. All backend logic, models, auth, and dynamic content features were developed by me.
+> Note: The HTML–CSS–JS design of this project is based on a pre-made template. I integrated the FastAPI Websocket backend myself and customized the template to fit project structure. All backend logic, models, auth, and other content features were developed by me.
 
 ## 🚀 Features
 
