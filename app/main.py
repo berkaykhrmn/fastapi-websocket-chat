@@ -6,16 +6,15 @@ from fastapi.security import OAuth2PasswordRequestForm
 
 from sqlalchemy.orm import Session
 from sqlalchemy import or_, func
+from pathlib import Path
 
-from database import engine, Base, SessionLocal
+from core.database import engine, Base, SessionLocal
 from schemas import UserCreate, UserResponse, Token
-from security import hash_password, verify_password, create_access_token, decode_access_token
+from core.security import hash_password, verify_password, create_access_token, decode_access_token
 from models import User, Message, Chat, chat_users
-from dependencies import get_db, get_current_user
+from core.dependencies import get_db, get_current_user
 
 import json
-
-Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
@@ -140,9 +139,12 @@ def get_chat_messages(chat_id: int, db: Session = Depends(get_db), current_user:
         for m in messages
     ]
 
+
+BASE_DIR = Path(__file__).resolve().parent.parent
 @app.get("/")
 async def get():
-    return HTMLResponse(open("templates/index.html").read())
+    html_path = BASE_DIR / "templates" / "index.html"
+    return HTMLResponse(html_path.read_text(encoding="utf-8"))
 
 
 @app.websocket("/ws/{chat_id}")

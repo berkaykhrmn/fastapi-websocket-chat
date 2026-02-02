@@ -1,6 +1,6 @@
-from database import SessionLocal
+from core.database import SessionLocal
 from models import User
-from security import decode_access_token
+from core.security import decode_access_token
 
 from sqlalchemy.orm import Session
 

@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, Text, Table, Boolean
 from sqlalchemy.orm import relationship
 from datetime import datetime
-from database import Base
+from core.database import Base
 
 chat_users = Table(
     "chat_users",
