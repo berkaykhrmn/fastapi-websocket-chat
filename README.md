@@ -33,8 +33,6 @@ A real-time chat application built with FastAPI, WebSockets, PostgreSQL, and mod
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [WebSocket Protocol](#websocket-protocol)
 - [Project Structure](#project-structure)
 
 ## 🛠️ Installation
