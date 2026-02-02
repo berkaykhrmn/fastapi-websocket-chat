@@ -7,7 +7,7 @@ A real-time chat application built with FastAPI, WebSockets, PostgreSQL, and mod
 ![JWT](https://img.shields.io/badge/Auth-JWT-orange?logo=jsonwebtokens)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue)
 ![WebSocket](https://img.shields.io/badge/WebSocket-Real--time-orange)
-![Docker](https://img.shields.io/badge/Docker-Enabled-blue)
+![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 ![Alembic](https://img.shields.io/badge/Migrations-Alembic-red)
 ![Pytest](https://img.shields.io/badge/Tests-Pytest-green)
