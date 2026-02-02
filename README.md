@@ -9,6 +9,8 @@ A real-time chat application built with FastAPI, WebSockets, PostgreSQL, and mod
 ![WebSocket](https://img.shields.io/badge/WebSocket-Real--time-orange)
 ![Docker](https://img.shields.io/badge/Docker-Enabled-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
+![Alembic](https://img.shields.io/badge/Migrations-Alembic-red)
+![Pytest](https://img.shields.io/badge/Tests-Pytest-green)
 
 > **Note:**
 > Note: The HTML–CSS–JS design of this project is based on a pre-made template. I integrated the FastAPI Websocket backend myself and customized the template to fit project structure. All backend logic, models, auth, and other content features were developed by me.
@@ -22,6 +24,8 @@ A real-time chat application built with FastAPI, WebSockets, PostgreSQL, and mod
 - **Chat Management**: Create and manage one-on-one chat sessions
 - **Responsive UI**: Modern, gradient-styled interface with smooth animations
 - **Database Persistence**: PostgreSQL database for storing users, chats, and messages
+- **Database Migrations**: Alembic for managing database schema changes
+- **Automated Testing**: Comprehensive test suite with pytest
 - **Docker Support**: Easy deployment with Docker and Docker Compose
 
 ## 📋 Table of Contents
@@ -107,3 +111,38 @@ The application will be available at `http://localhost:8000`
 - **Online Status**: Green "Online" badge or "Last seen" timestamp
 - **Message History**: All messages are persisted in the database
 - **Multiple Chats**: Switch between different conversations
+
+
+## 📁 Project Structure
+```
+fastapi-websocket-chat/
+├── alembic/                    # Database migrations
+│   ├── versions/               # Migration version files
+│   ├── env.py                  # Alembic environment configuration
+├── tests/                      # Test suite
+│   ├── conftest.py             # Pytest fixtures and configuration
+│   ├── test_api.py             # Authentication tests
+│   ├── test_security.py        # Chat functionality tests
+├── templates/                  # Frontend templates
+│   └── index.html              # Main HTML/CSS/JavaScript interface
+├── app/
+│   ├── __init__.py
+│   ├── main.py                 # FastAPI application entry point and routes
+├── core/
+│   ├── database.py             # Database configuration and session management
+│   ├── security.py             # JWT authentication and Argon2 password hashing
+│   ├── dependencies.py         # FastAPI dependencies (auth, database session)
+│   ├── __init__.py
+├── models.py                   # SQLAlchemy ORM models (User, Chat, Message)
+├── schemas.py                  # Pydantic schemas for request/response validation
+├── requirements.txt            # Python package dependencies
+├── alembic.ini                # Alembic configuration file
+├── pytest.ini                 # Pytest configuration file
+├── Dockerfile                 # Docker container configuration
+├── docker-compose.yml         # Docker Compose services (app, db)
+├── .env                       # Environment variables (not in git)
+├── .env.example               # Example environment variables
+├── .gitignore                 # Git ignore rules
+├── LICENSE                    # MIT License
+└── README.md                  # Project documentation
+```
