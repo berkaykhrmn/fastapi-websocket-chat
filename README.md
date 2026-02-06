@@ -2,15 +2,15 @@
 
 A real-time chat application built with FastAPI, WebSockets, PostgreSQL, and modern web technologies. This project demonstrates a full-stack implementation of a messaging platform with user authentication, real-time communication, and online status tracking.
 
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.128.0-green)
-![JWT](https://img.shields.io/badge/Auth-JWT-orange?logo=jsonwebtokens)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql&logoColor=white)
-![WebSocket](https://img.shields.io/badge/WebSocket-Real--time-orange)
-![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker)
-![License](https://img.shields.io/badge/License-MIT-yellow)
-![Alembic](https://img.shields.io/badge/Migrations-Alembic-red)
-![Pytest](https://img.shields.io/badge/Tests-Pytest-green)
+![Python](https://img.shields.io/badge/Python-3.12+-3776AB?logo=python&logoColor=white&style=for-the-badge)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.128+-009688?logo=fastapi&logoColor=white&style=for-the-badge)
+![WebSockets](https://img.shields.io/badge/WebSockets-Real--time-010101?logo=socket.io&logoColor=white&style=for-the-badge)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql&logoColor=white&style=for-the-badge)
+![JWT](https://img.shields.io/badge/JWT-black?logo=jsonwebtokens&logoColor=white&style=for-the-badge)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge)
+![Alembic](https://img.shields.io/badge/Alembic-red?logo=alembic&logoColor=white&style=for-the-badge)
+![Pytest](https://img.shields.io/badge/Pytest-0f0?logo=pytest&logoColor=black&style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
 > **Note:**
 > Note: The HTML–CSS–JS design of this project is based on a pre-made template. I integrated the FastAPI Websocket backend myself and customized the template to fit project structure. All backend logic, models, auth, and other content features were developed by me.
