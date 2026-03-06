@@ -8,7 +8,6 @@ A real-time chat application built with FastAPI, WebSockets, PostgreSQL, and mod
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql&logoColor=white&style=for-the-badge)
 ![JWT](https://img.shields.io/badge/JWT-black?logo=jsonwebtokens&logoColor=white&style=for-the-badge)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge)
-![Alembic](https://img.shields.io/badge/Alembic-red?logo=alembic&logoColor=white&style=for-the-badge)
 ![Pytest](https://img.shields.io/badge/Pytest-0f0?logo=pytest&logoColor=black&style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
@@ -26,7 +25,6 @@ The template was customized and integrated to align with the project’s functio
 - **Chat Management**: Create and manage one-on-one chat sessions
 - **Responsive UI**: Modern, gradient-styled interface with smooth animations
 - **Database Persistence**: PostgreSQL database for storing users, chats, and messages
-- **Database Migrations**: Alembic for managing database schema changes
 - **Automated Testing**: Comprehensive test suite with pytest
 - **Docker Support**: Easy deployment with Docker and Docker Compose
 
@@ -116,9 +114,6 @@ The application will be available at `http://localhost:8000`
 ## 📁 Project Structure
 ```
 fastapi-websocket-chat/
-├── alembic/                    # Database migrations
-│   ├── versions/               # Migration version files
-│   ├── env.py                  # Alembic environment configuration
 ├── tests/                      # Test suite
 │   ├── conftest.py             # Pytest fixtures and configuration
 │   ├── test_api.py             # Authentication tests
@@ -136,7 +131,6 @@ fastapi-websocket-chat/
 ├── models.py                   # SQLAlchemy ORM models (User, Chat, Message)
 ├── schemas.py                  # Pydantic schemas for request/response validation
 ├── requirements.txt            # Python package dependencies
-├── alembic.ini                # Alembic configuration file
 ├── pytest.ini                 # Pytest configuration file
 ├── Dockerfile                 # Docker container configuration
 ├── docker-compose.yml         # Docker Compose services (app, db)
