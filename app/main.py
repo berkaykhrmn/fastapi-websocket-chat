@@ -1,4 +1,5 @@
 from datetime import datetime
+from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Depends, HTTPException
 from fastapi.responses import HTMLResponse
@@ -15,8 +16,20 @@ from models import User, Message, Chat, chat_users
 from core.dependencies import get_db, get_current_user
 
 import json
+import asyncio
 
-app = FastAPI()
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    print("Waiting for PostgreSQL to be ready...")
+    await asyncio.sleep(12)
+    print("Creating all tables if they don't exist...")
+    Base.metadata.create_all(bind=engine)
+    print("Table creation check completed.")
+
+    yield
+    print("Application shutting down...")
+
+app = FastAPI(lifespan=lifespan, title="FastAPI WebSocket Chat")
 
 active_connections = {}
 
