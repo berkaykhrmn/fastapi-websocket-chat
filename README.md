@@ -11,11 +11,6 @@ A real-time chat application built with FastAPI, WebSockets, PostgreSQL, and mod
 ![Pytest](https://img.shields.io/badge/Pytest-0f0?logo=pytest&logoColor=black&style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-> **Note:**
-> The frontend (HTML, CSS, JavaScript) of this project is based on a pre-made template.
-I designed and implemented the entire FastAPI backend, including WebSocket-based real-time communication, authentication, database models, message persistence, and application architecture.
-The template was customized and integrated to align with the project’s functionality and structure.
-
 ## 🚀 Features
 
 - **Real-time Messaging**: WebSocket-based instant messaging between users
